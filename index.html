@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        *{
+    box-sizing:border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+}
+.container{
+    background-color:#f2f2f2;
+    border: 2px solid lightgrey;
+    padding: 5px 20px 15px 20px;
+    border-radius: 10px;
+}
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+fieldset{
+    background-color:#fff;
+    border: 1px solid #ccc;
+
+}
+.main_heading{
+    text-align: center;
+}
+input[type="submit"]
+{
+    background-color: rgb(0, 174, 255);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+input[type="submit"]:hover{
+    background-color: chartreuse;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form method="get" action="">
+        <h1 class="main_heading">Abhyaz Feedback Form</h1>
+        <hr>
+        <p>Required Fields are followed by *</p>
+        <h2>Contact Information</h2><br>
+        <p>Name: * <input type="text" name="name" required placeholder="Nitish Kumar"></p><br>
+        <fieldset>
+            <legend>Gender *</legend>
+          <p>
+            Male<input type="radio" name="gender" id="male" required>Female<input type="radio" name="gender" id="female" required>
+          </p>
+        </fieldset><br>
+        <p>
+            Address:<br><textarea name="address" id="address" cols="30" rows="6" placeholder="Enter your Address"></textarea>
+        </p><br>
+        <p>
+            Email: * <input type="email" name="email" id="email" placeholder="jack@gmail.com">
+        </p><br>
+        <p>
+            PinCode: * <input type="number" name="pin" id="pin" placeholder="12345">
+        </p><br>
+        <h2>Feedback</h2><br>
+        <p>
+            Ease of Use: * <input type="range" id="eou" name="eou" min="1" max="5" value="2" step="1">
+        </p><br>
+        <p>
+            Customer Support: * <input type="range" id="cs" name="cs" min="1" max="5" value="2" step="1">
+        </p><br>
+        <p>
+            Performance: * <input type="range" id="pr" name="pr" min="1" max="5" value="2" step="1">
+        </p><br>
+        <p>
+            Internship Experience: *
+            <select name="ixp" id="ixp" required>
+               <option value="">--select Experience--</option>
+               <option value="e">Excellent</option>
+               <option value="g">Good</option>
+               <option value="ok">Ok</option>
+            </select>
+        </p><br>
+        <p>
+            Overall Satisfaction: * <input type="range" id="pr" name="pr" min="1" max="5" value="2" step="1">
+        </p><br>
+        <p>
+            Improvement Suggestions: * <br><textarea name="sugg" id="sugg" cols="30" rows="6" placeholder="Enter your Suggestions"></textarea>
+        </p><br>
+        <input type="submit" value="send feedback">
+    </form>
+</div>
+</body>
+</html>
