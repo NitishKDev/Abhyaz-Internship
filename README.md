@@ -1,2 +1,2 @@
 # Abhyaz
-All task related to Abhyaz
+All Outcomes related to Abhyaz
